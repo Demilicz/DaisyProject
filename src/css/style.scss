@@ -1,0 +1,429 @@
+@import '../fonts/PFEncoreSansPro-Bold/fonts.css';
+@import '../fonts/PFEncoreSansPro-Regular/fonts.css';
+@import '../fonts/PFEncoreSansPro-Light/fonts.css';
+
+@import '../images/icons/style.css';
+
+
+@import './common-style/style.scss';
+
+
+.header {
+
+    background-image: linear-gradient( rgba(24, 24, 24, 0.7) 100%, rgba(24, 24, 24, 0.7) 100%), url('../images/BG_Home.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  &__container {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top{
+    display: flex;
+    align-items: center;
+    padding: 23px 160px 0 160px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__logo {
+    font-family: 'PFEncoreSansPro-Bold';
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  &__logopolygon {
+    font-size: 35.5px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    width: 59px;
+    height: 68px;
+    background: red;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0 25px;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    a {
+      transition: all 0.3s ease 0s;
+      color: #ffffff;
+      &:hover{
+        color: red;
+      }
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      bottom: -7px;
+      left: 0;
+      right: 0;
+      background-color: #fc635e;
+      margin: 0 auto;
+      display: none;
+    }
+    &:hover{
+      &::after{
+        display: initial;
+      }
+    }
+
+  }
+
+  &__title {
+    font-family: 'PFEncoreSansPro-Bold';
+    font-size: 51px;
+    line-height: 0.71;
+    color: #ffffff;
+    margin-top: 192px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    p {
+      span{
+        color: #fc635e;
+      }
+    }
+
+
+  }
+
+  &__line {
+    width: 107px;
+    height: 8px;
+    margin: 0 11px;
+    opacity: 0.2;
+    border: solid 8px #ffffff;
+    background-color: #ffffff;
+  }
+
+  &__subtitle {
+    margin-top: 27px;
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: -0.12px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__mouse {
+    width: 73px;
+    height: 0px;
+    position: relative;
+    img{
+      position: absolute;
+      top: -290px;
+      right: -200px;
+      // height: 100%;
+    }
+  }
+
+  &__btnType1 {
+    margin: 48px 0px 241px 0px;
+  }
+
+  &__btnDown {
+    background: rgba(252, 99, 94, 0.97);
+    color: white !important;
+    &:hover{
+      color: rgba(252, 99, 94, 0.97) !important;
+      background: initial;
+    }
+  }
+}
+
+.receive {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: 'PFEncoreSansPro-Regular';
+    margin: 63px 0px 32px 0px;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 0.93;
+    letter-spacing: -0.14px;
+    text-align: center;
+    color: #868686;
+    text-transform: uppercase;
+    p {
+      span{
+        color: #fc635e;
+      }
+    }
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: -12px;
+      margin: 0 auto;
+      width: 100%;
+      height: 1px;
+      background-color: #adadad;
+    }
+  }
+
+  &__subtitle {
+    max-width: 508px;
+    margin: 0px 0px 81px 0px;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #adadad;
+  }
+
+  &__cards {
+    display: flex;
+    margin-bottom: 51px;
+  }
+
+  &__card {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+
+  }
+
+  &__polygon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    width: 102px;
+    height: 116px;
+    background-color: #fe8682;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+
+    &:hover{
+      background: #fc635e;
+      .receive__polygon-in{
+        background-color: #ffffff;
+      .icon {
+        color:#fc635e;
+      }
+      }
+    }
+  }
+
+  &__polygon-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    width: 91px;
+    height: 104px;
+    background-color: #fc635e;
+    .icon {
+      content: "";
+      width: auto;
+      height: 40px;
+      font-size: 40px;
+      color: #ffffff;
+    }
+  }
+
+  &__article {
+    font-family: 'PFEncoreSansPro-Regular';
+    font-weight: 600;
+    margin: 21px 0px 33px 0px;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #868686;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 205px;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.08px;
+    text-align: center;
+    color: #adadad;
+  }
+
+  &__btnDown{
+    &:hover{
+      background: rgba(252, 99, 94, 0.97);
+      color: white !important;
+    }
+  }
+}
+
+
+
+
+
+// Common elements and blocks
+
+
+
+.btnType1 {
+  padding: 20px 37px 18px 38px;
+  border-radius: 7px;
+  border: solid 2px #fc635e;
+  color: #fc635e;
+  font-size: 24px;
+  font-family: 'PFEncoreSansPro-Light';
+}
+
+.btnDown {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(252, 99, 94, 0.97);
+  color: rgba(252, 99, 94, 0.97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+
+// Support Classes
+
+.menu-burger{
+  display: none;
+}
+.shadow {
+  box-shadow: 0px 0px 3px #888;
+}
+.d-none {
+  display: none;
+}
+
+
+// Menu Burger
+
+@media screen and (max-width:768px){
+  .menu-burger {
+    display: block;
+    z-index: 5;
+    right: 0px;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .menu-burger::before,
+  .menu-burger::after,
+  .menu-burger span {
+    left:0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: black;
+  }
+  .menu-burger::before,
+  .menu-burger::after {
+    content: "";
+  }
+  .menu-burger::before {
+    top: 0;
+  }
+  .menu-burger::after {
+    bottom: 0;
+  }
+  .menu-burger span {
+    top: 50%;
+    transform: scale(1) translate(0, -50%);
+  }
+  .menu-burger._active {
+    span {
+      transform: scale(0) translate(0, -50%);
+    }
+  }
+  .menu-burger._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu-burger._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+
+
+  .header__list{
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-color:rgba(0, 0, 0, 0.9);
+    padding: 120px 15px 15px 15px;
+    transition: left 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .header__list._active {
+    left: 0px;
+    .header__logo {
+        position: fixed;
+        left: 30px;
+    }
+    .fixed-burger {
+      position: fixed;
+    }
+  }
+  .header__list._active::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 94px;
+    background: gray;
+    z-index: 9;
+  }
+ }
+
+
+// !! Tip for Carousel, if you want to use Carousel you need to add this class below to your
+// !!section and for safety you need to limit your slide-conteiner by max-width. And of course
+// !!you need to add this slide-container in carousel.js, and connect this js file to app.js
+
+// .slick-slider {
+
+//   .slick-list {
+//     overflow: hidden;
+//   }
+//   .slick-track{
+//     display: flex;
+//   }
+// }
