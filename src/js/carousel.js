@@ -2,7 +2,7 @@ import  $ from 'jquery';
 
 $(function() {
 
-  $('.').slick({
+  $('.slider__shell').slick({
     draggable: false,
     responsive: [
       {

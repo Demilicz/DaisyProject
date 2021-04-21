@@ -1073,6 +1073,245 @@
 
 }
 
+.team {
+
+  background:#f2f2f2;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 86px 60px 71px 60px;
+  }
+
+  &__name {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 0.93;
+    letter-spacing: -0.14px;
+    text-align: center;
+    font-family: 'PFEncoreSansPro-Regular';
+    color: #565656;
+    margin: 25px 0 18px 0;
+    p {
+      span{
+        color: #fc635e;
+      }
+    }
+  }
+
+  &__prof {
+    font-size: 20px;
+    color: #565656;
+  }
+
+  &__social {
+    display: flex;
+    margin-top: 17px;
+  }
+
+  &__icon {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #565656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background: #fc635e;
+    }
+    i {
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+
+.slider {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__polygon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    margin-top: 56px;
+    width: 74px;
+    height: 86px;
+    background-color: #fe8682;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__polygonIn {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    width: 68px;
+    height: 78px;
+    background-color: #fc635e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      color: white;
+      font-size: 30px;
+    }
+  }
+
+  &__shell {
+    max-width: 950px;
+    margin: 64px 0 242px 0;
+    position: relative;
+  }
+  .slick-slider {
+
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-track{
+    display: flex;
+  }
+  .slick-arrow{
+    position: absolute;
+    font-size: 0;
+    width: 31px;
+    height: 31px;
+    bottom: -82px;
+  }
+  .slick-next {
+    z-index: 1;
+    right: 430px;
+    background: url('../images/icons/Arrow_next.svg') 0 0 no-repeat;
+  }
+  .slick-prev {
+    left: 430px;
+    z-index: 1;
+    background: url('../images/icons/Arrow_prev.svg') 0 0 no-repeat;
+  }
+
+}
+
+  &__card {
+    width: 920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__text {
+    flex: 0 0 30%;
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: -0.08px;
+    color: #767676;
+  }
+
+  img {
+    flex: 0 0 10%;
+    align-self: center;
+    justify-self:center;
+  }
+
+  &__info {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+
+  &__name {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 0.93;
+    letter-spacing: -0.14px;
+    text-align: center;
+    font-family: 'PFEncoreSansPro-Regular';
+    color: #565656;
+    margin-bottom: 18px;
+    p {
+      span{
+        color: #fc635e;
+      }
+    }
+  }
+
+  &__prof {
+    font-size: 20px;
+    color: #565656;
+  }
+
+  &__address-shell {
+    position: relative;
+  }
+
+  &__address {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 209px;
+    height: 242px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background-color: #fe8682;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__addPolygon {
+    width: 189px;
+    height: 218px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background-color: #fe8682;
+    display: flex;
+    background: #fc635e;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__article {
+    margin: 64px 48px 21px 44px;
+    font-family: 'PFEncoreSansPro-Regular';
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 0.78;
+    letter-spacing: -0.14px;
+    text-align: right;
+    color: #ffffff;
+  }
+
+  &__inAddress {
+    padding: 0 5px;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: -0.08px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+
+
+
+
+
 
 
 
@@ -1220,12 +1459,3 @@
 // !!section and for safety you need to limit your slide-conteiner by max-width. And of course
 // !!you need to add this slide-container in carousel.js, and connect this js file to app.js
 
-// .slick-slider {
-
-//   .slick-list {
-//     overflow: hidden;
-//   }
-//   .slick-track{
-//     display: flex;
-//   }
-// }
