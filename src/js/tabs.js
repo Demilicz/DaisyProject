@@ -22,8 +22,7 @@ tab5.addEventListener("click", () => tabsListener("card_build"));
   // handlers
 
   function imgHandler(acc, img ){
-
-    acc.push({"classes": img.classList.value, "src" : img.firstElementChild.firstElementChild.alt});
+    acc.push({"classes": img.classList.value, "src" : img.firstElementChild.alt});
     return acc;
   };
 
