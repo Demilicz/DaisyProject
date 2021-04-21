@@ -22,18 +22,20 @@ tab5.addEventListener("click", () => tabsListener("card_build"));
   // handlers
 
   function imgHandler(acc, img ){
-    acc.push({"classes": img.classList.value, "src" : img.firstChild.alt });
+
+    acc.push({"classes": img.classList.value, "src" : img.firstElementChild.firstElementChild.alt});
     return acc;
   };
 
   function tabsListener(cls) {
 
     parentTabs.innerHTML = '';
+
     colectionsImg.forEach(element => {
 
-      if(element.classes.includes(cls)) {
+    if(element.classes.includes(cls)) {
 
-      parentTabs.innerHTML +=`<div class="${element.classes}"><img src="${element.src}"></div>`;
+    parentTabs.innerHTML +=`<div class="${element.classes}"><img src="${element.src}"></div>`;
 
     }
   });
