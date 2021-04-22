@@ -17,7 +17,7 @@
             <div class="header__top">
               <div class="header__logo"><div class="header__logopolygon"><div>D</div></div> Daisy</div>
               <div class="header__list">
-                <div class="header__link"> <a href="#">about</a> </div>
+                <div class="header__link"><a href="#">about</a> </div>
                 <div class="header__link"><a href="#">portfolio</a></div>
                 <div class="header__link"><a href="#">services</a></div>
                 <div class="header__link"><a href="#">contact</a></div>
@@ -32,7 +32,7 @@
             <div class="header__subtitle">Your clients on the internet. Learn how to receive them.</div>
             <div class="btnType1 header__btnType1">I want clients</div>
             <div class="header__mouse"><img src="<%= require('../src/images/mouseHome.png')%>" alt="mouse"></div>
-            <div class="btnDown header__btnDown"><div class="_icon-Arrow-down"></div></div>
+            <a href="#" data-goto=".receive" class="btnDown header__btnDown _icon-Arrow-down"></a>
         </div>
     </header>
 
@@ -78,7 +78,7 @@
             <div class="receive__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</div>
           </div>
         </div>
-        <div class="btnDown receive__btnDown"><i class="_icon-Arrow-down"></i></div>
+        <a href="#" data-goto=".expand" class="btnDown receive__btnDown _icon-Arrow-down"></a>
       </div>
     </section>
 
@@ -88,7 +88,7 @@
           <div class="expand__title"><p><span>Expand</span> your business</p></div>
           <div class="expand__btn btnType1">Join Us</div>
         </div>
-        <div class="expand__btnDown btnDown"><i class="_icon-Arrow-down"></i></div>
+        <a href="#" data-goto=".process"  class="expand__btnDown btnDown _icon-Arrow-down"></a>
       </div>
     </section>
 
@@ -143,7 +143,7 @@
           </div>
           <img  class="process__img" src="<%= require('../src/images/ProcessPolygon.png')%>" alt="">
         </div>
-        <div class="process__btnDown btnDown"><i class="_icon-Arrow-down"></i></div>
+        <a href="#" data-goto=".landing"  class="process__btnDown btnDown _icon-Arrow-down"></a>
       </div>
     </section>
 
@@ -158,7 +158,7 @@
           </div>
           <img src="<%= require('../src/images/WeDo.png')%>" alt="" class="landing__img">
         </div>
-        <div class="btnDown landing__btnDown"><i class="_icon-Arrow-down"></i></div>
+        <a href="#" data-goto=".advertising" class="btnDown landing__btnDown _icon-Arrow-down"></a>
       </div>
     </section>
 
@@ -172,7 +172,7 @@
             <div class="landing__btn  landing__btn_right">More details</div>
           </div>
         </div>
-        <div class="btnDown landing__btnDown"><i class="_icon-Arrow-down"></i></div>
+        <a href="#" data-goto=".marketing"  class="btnDown landing__btnDown _icon-Arrow-down"></a>
       </div>
     </section>
 
@@ -186,7 +186,7 @@
           </div>
           <img src="<%= require('../src/images/Marketing.png')%>" alt="" class="landing__img">
         </div>
-        <div class="btnDown landing__btnDown"><i class="_icon-Arrow-down"></i></div>
+        <a href="#" data-goto=".portfolio" class="btnDown landing__btnDown _icon-Arrow-down"></a>
       </div>
     </section>
 
@@ -237,7 +237,7 @@
           </div>
         </div>
         <div class="landing__btn landing__btn_port">I want landing page</div>
-        <div class="btnDown landing__btnDown"><i class="_icon-Arrow-down"></i></div>
+        <a href="#" data-goto=".team" class="btnDown landing__btnDown _icon-Arrow-down"></a>
       </div>
     </section>
 
@@ -276,7 +276,7 @@
             </div>
           </div>
         </div>
-        <div class="btnDown landing__btnDown"><i class="_icon-Arrow-down"></i></div>
+        <a href="#" data-goto=".slider" class="btnDown landing__btnDown _icon-Arrow-down"></a>
       </div>
     </section>
 
@@ -332,7 +332,6 @@
       <div class="footer__polygon"><div>D</div></div>
       <div class="footer__title">Daisy</div>
     </footer>
-
 
 
     <div class="popup" id="popup1">

@@ -4,7 +4,6 @@ const popupsArea = document.querySelectorAll('.popup_area');
 const popups = document.querySelectorAll('.popup');
 
 
-
 popupsLink.forEach( popup => {
   popup.addEventListener('click', ()=> {
     document.body.classList.add('_lock');

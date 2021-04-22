@@ -27,7 +27,8 @@ document.addEventListener('scroll', () => {
 
 // navigation
 
-const menuLinks = document.querySelectorAll('.header__item');
+const menuLinks = document.querySelectorAll('.btnDown');
+
 
 if(menuLinks.length > 0){
   menuLinks.forEach(link => {
@@ -37,10 +38,13 @@ if(menuLinks.length > 0){
 
 function onMenuLinkClick(e) {
   const menuLink = e.target;
+
+  console.log(menuLink);
+
   if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
-    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header').offsetHeight;
-
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+    console.log(gotoBlockValue);
     if(iconMenu.classList.contains('_active')){
       document.body.classList.remove('_lock');
       iconMenu.classList.remove('_active');
@@ -52,6 +56,7 @@ function onMenuLinkClick(e) {
       top: gotoBlockValue,
       behavior: "smooth"
     });
+
     e.preventDefault();
   }
 }
