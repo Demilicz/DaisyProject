@@ -22,7 +22,13 @@ tab5.addEventListener("click", () => tabsListener("card_build"));
   // handlers
 
   function imgHandler(acc, img ){
-    acc.push({"classes": img.classList.value, "src" : img.firstElementChild.alt});
+    let link = img.firstElementChild.classList.value;
+    acc.push(
+      {
+        "classes": img.classList.value,
+        "src" : img.firstElementChild.firstElementChild.alt,
+        "link": link
+       });
     return acc;
   };
 
@@ -34,7 +40,7 @@ tab5.addEventListener("click", () => tabsListener("card_build"));
 
     if(element.classes.includes(cls)) {
 
-    parentTabs.innerHTML +=`<div class="${element.classes}"><img src="${element.src}"></div>`;
+    parentTabs.innerHTML +=`<div class="${element.classes}"><a href="#${element.link.slice(0,6)}" class="${element.link}"><img src="${element.src}"></a></div>`;
 
     }
   });

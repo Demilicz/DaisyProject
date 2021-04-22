@@ -7,5 +7,7 @@ import "../js/menu-burger";
 
 import "../js/tabs";
 import "../js/carousel";
+import "../js/popup.js";
+
 
 

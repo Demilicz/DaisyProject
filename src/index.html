@@ -10,6 +10,8 @@
   </head>
   <body>
 
+    <div id="area_fixed"></div>
+
     <header class="header">
         <div class="container header__container">
             <div class="header__top">
@@ -203,23 +205,35 @@
           <div class="portfolio__link _build">building</div>
         </div>
         <div class="portfolio__images">
-          <div class="portfolio__card cd_tallest card_build">
-            <img src="<%= require('../src/images/Pf_01.jpg')%>" alt="../src/images/Pf_01.jpg">
+          <div class="portfolio__card card_build">
+            <a href="#popup1" class="popup1-tallest popup_link">
+              <img src="<%= require('../src/images/Pf_01.jpg')%>" alt="../src/images/Pf_01.jpg">
+            </a>
           </div>
-          <div class="portfolio__card cd_sportsale card_build card_sport card_business">
-            <img src="<%= require('../src/images/Pf_02.jpg')%>" alt="../src/images/Pf_02.jpg">
+          <div class="portfolio__card card_build card_sport card_business">
+            <a href="#popup2" class="popup2-build popup_link">
+              <img src="<%= require('../src/images/Pf_02.jpg')%>" alt="../src/images/Pf_02.jpg">
+            </a>
           </div>
-          <div class="portfolio__card cd_mountain card_sport card_enter">
-            <img src="<%= require('../src/images/Pf_03.png')%>" alt="../src/images/Pf_03.png">
+          <div class="portfolio__card card_sport card_enter">
+            <a href="#popup3" class="popup3-mountain popup_link">
+              <img src="<%= require('../src/images/Pf_03.png')%>" alt="../src/images/Pf_03.png">
+            </a>
           </div>
-          <div class="portfolio__card cd_aviasales  card_business card_enter">
-            <img src="<%= require('../src/images/Pf_04.jpg')%>" alt="../src/images/Pf_04.jpg">
+          <div class="portfolio__card card_business card_enter">
+            <a href="#popup4" class="popup4-aviasales popup_link">
+              <img src="<%= require('../src/images/Pf_04.jpg')%>" alt="../src/images/Pf_04.jpg">
+            </a>
           </div>
-          <div class="portfolio__card cd_cars card_business">
-            <img src="<%= require('../src/images/Pf_05.png')%>" alt="../src/images/Pf_05.png">
+          <div class="portfolio__card card_business">
+            <a href="#popup5" class="popup5-cars popup_link">
+              <img src="<%= require('../src/images/Pf_05.png')%>" alt="../src/images/Pf_05.png">
+            </a>
           </div>
-          <div class="portfolio__card cd_party card_business card_enter">
-            <img src="<%= require('../src/images/Pf_06.png')%>" alt="../src/images/Pf_06.png">
+          <div class="portfolio__card card_business card_enter">
+            <a href="#popup6" class="popup6-party popup_link">
+              <img src="<%= require('../src/images/Pf_06.png')%>" alt="../src/images/Pf_06.png">
+            </a>
           </div>
         </div>
         <div class="landing__btn landing__btn_port">I want landing page</div>
@@ -266,7 +280,7 @@
       </div>
     </section>
 
-    <div class="slider">
+    <section class="slider">
       <div class="slider__container container">
         <div class="slider__polygon">
           <div class="slider__polygonIn">
@@ -306,6 +320,72 @@
               <div class="slider__inAddress">615 4th Ave S, Jacksonville Beach, FL 32250</div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6890.846192546317!2d-81.3970614138369!3d30.282014624600837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e449af588a7b33%3A0x6e0d9f9a35f2f6f9!2zNjE1IDR0aCBBdmUgUywgSmFja3NvbnZpbGxlIEJlYWNoLCBGTCAzMjI1MCwg0KHQv9C-0LvRg9GH0LXQvdGWINCo0YLQsNGC0Lgg0JDQvNC10YDQuNC60Lg!5e0!3m2!1suk!2spl!4v1619077895517!5m2!1suk!2spl" width="100%" height="338" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__polygon"><div>D</div></div>
+      <div class="footer__title">Daisy</div>
+    </footer>
+
+
+
+    <div class="popup" id="popup1">
+      <a href="#area_fixed" class="popup_area"></a>
+      <div class="popup__body">
+        <div class="popup__container">
+          <a href="#area_fixed" class="popup__close">x</a>
+          <img src="<%= require('../src/images/Pf_01.jpg')%>"alt="">
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup2">
+      <a href="#area_fixed" class="popup_area"></a>
+      <div class="popup__body">
+        <div class="popup__container">
+          <a href="#area_fixed" class="popup__close">x</a>
+          <img src="<%= require('../src/images/Pf_02.jpg')%>"alt="">
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup3">
+      <a href="#area_fixed" class="popup_area"></a>
+      <div class="popup__body">
+        <div class="popup__container">
+          <a href="#area_fixed" class="popup__close">x</a>
+          <img src="<%= require('../src/images/Pf_03.png')%>"alt="">
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup4">
+      <a href="#area_fixed" class="popup_area"></a>
+      <div class="popup__body">
+        <div class="popup__container">
+          <a href="#area_fixed" class="popup__close">x</a>
+          <img src="<%= require('../src/images/Pf_04.jpg')%>"alt="">
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup5">
+      <a href="#area_fixed" class="popup_area"></a>
+      <div class="popup__body">
+        <div class="popup__container">
+          <a href="#area_fixed" class="popup__close">x</a>
+          <img src="<%= require('../src/images/Pf_05.png')%>"alt="">
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup6">
+      <a href="#area_fixed" class="popup_area"></a>
+      <div class="popup__body">
+        <div class="popup__container">
+          <a href="#area_fixed" class="popup__close">x</a>
+          <img src="<%= require('../src/images/Pf_06.png')%>"alt="">
         </div>
       </div>
     </div>
