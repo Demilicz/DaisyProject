@@ -15,7 +15,6 @@ popupsCloses.forEach( popup => {
     document.body.classList.remove('_lock');
   })
 });
-
 popupsArea.forEach( pop => {
   pop.addEventListener('click', ()=> {
     document.body.classList.remove('_lock');

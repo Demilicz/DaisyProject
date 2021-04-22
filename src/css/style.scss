@@ -913,22 +913,27 @@
       width: inherit;
       height: 190px;
       position: relative;
-      transition: all 0.3s ease 0s;
+
       &:hover {
         &::before{
-          left: 40%;
+          opacity: 1;
+          visibility: visible;
         }
         &::after{
-          left: 0px;
+          opacity: 1;
+          visibility: visible;
         }
       }
       &::before {
+        transition: all 0.3s ease 0s;
         content: '';
         position: absolute;
         top: 70px;
-        left: -150%;
+        left: 40%;
         width: 50px;
         height: 50px;
+        opacity: 0;
+        visibility: hidden;
         font-size: 50px;
         font-size: 20px;
         background-image: url('../images/icons/Plus.svg');
@@ -937,6 +942,7 @@
         z-index: 1;
       }
       &::after {
+        transition: all 0.3s ease 0s;
         font-family: 'PFEncoreSansPro-Bold';
         position: absolute;
         font-size: 30px;
@@ -946,10 +952,12 @@
         background: rgba(252, 99, 94, 0.78);
         width: 100%;
         height: 100%;
+        opacity: 0;
+        visibility: hidden;
         text-transform: uppercase;
         padding: 20px 180px 0 10px;
         top: 0px;
-        left: -150%;
+        left: 0px;
       }
     }
   }
@@ -1264,12 +1272,20 @@
   width: 100%;
   height: 100%;
   top: 0;
-  left: -150%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
   z-index: 7;
 
+
   &:target {
-    left: 0;
+    opacity: 1;
+    visibility: visible;
+    .popup__container {
+      opacity: 1;
+      transform: translate(0px, 0px);
   }
+}
 
   &__body {
     min-height: 100%;
@@ -1287,7 +1303,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    transition: all 0.8s ease 0s;
     position: relative;
+    opacity: 0;
+    transform: translate(0px, -100%);
   }
 
   &__close {
@@ -1330,6 +1349,7 @@
 }
 
 .btnDown {
+  transition: all 0.3s ease 0s;
   width: 28px;
   height: 28px;
   margin-bottom: 15px;
