@@ -9,14 +9,15 @@ popupsLink.forEach( popup => {
     document.body.classList.add('_lock');
   })
 });
+
 popupsCloses.forEach( popup => {
-  popup.addEventListener('click', ()=> {
-    document.body.classList.remove('_lock');
-  })
+  popup.addEventListener('click', onClickClose);
 });
 popupsArea.forEach( pop => {
-  pop.addEventListener('click', ()=> {
-    document.body.classList.remove('_lock');
-  })
+  pop.addEventListener('click', onClickClose);
 });
 
+
+function onClickClose () {
+  document.body.classList.remove('_lock');
+}
